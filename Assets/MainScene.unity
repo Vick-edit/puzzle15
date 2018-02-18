@@ -156,6 +156,11 @@ Prefab:
       propertyPath: m_Name
       value: MovableCube_2_1
       objectReference: {fileID: 0}
+    - target: {fileID: 23464166804128450, guid: c6a01814d3017604da045a7348d2933b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce45aa87dc456ee45bd97459bbb652c0, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6a01814d3017604da045a7348d2933b, type: 2}
   m_IsPrefabParent: 0
@@ -223,6 +228,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23464166804128450, guid: c6a01814d3017604da045a7348d2933b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8218e0a1c9900084cb65237cfdac1c90, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6a01814d3017604da045a7348d2933b, type: 2}
   m_IsPrefabParent: 0
@@ -274,6 +284,11 @@ Prefab:
       propertyPath: m_Name
       value: MovableCube_1_4
       objectReference: {fileID: 0}
+    - target: {fileID: 23464166804128450, guid: c6a01814d3017604da045a7348d2933b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04142d0e032a2094588ce1fc468cbb8b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6a01814d3017604da045a7348d2933b, type: 2}
   m_IsPrefabParent: 0
@@ -365,6 +380,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23464166804128450, guid: c6a01814d3017604da045a7348d2933b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: de7b38112439b734d8713ec5091081f2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6a01814d3017604da045a7348d2933b, type: 2}
   m_IsPrefabParent: 0
@@ -462,6 +482,11 @@ Prefab:
       propertyPath: m_Name
       value: MovableCube_1_3
       objectReference: {fileID: 0}
+    - target: {fileID: 23464166804128450, guid: c6a01814d3017604da045a7348d2933b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7870c651b5833ec4781265c136fbea56, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6a01814d3017604da045a7348d2933b, type: 2}
   m_IsPrefabParent: 0
@@ -800,6 +825,11 @@ Prefab:
       propertyPath: m_Name
       value: MovableCube_3_1
       objectReference: {fileID: 0}
+    - target: {fileID: 23464166804128450, guid: c6a01814d3017604da045a7348d2933b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6793079356ce2e54ea7cd7a3d037c6da, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6a01814d3017604da045a7348d2933b, type: 2}
   m_IsPrefabParent: 0
@@ -925,6 +955,11 @@ Prefab:
       propertyPath: m_Name
       value: MovableCube_1_2
       objectReference: {fileID: 0}
+    - target: {fileID: 23464166804128450, guid: c6a01814d3017604da045a7348d2933b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a14b3edebeba1349913d52ec2629e98, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6a01814d3017604da045a7348d2933b, type: 2}
   m_IsPrefabParent: 0
@@ -1070,6 +1105,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23464166804128450, guid: c6a01814d3017604da045a7348d2933b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ed3ec9f85134efd4c8d64c97ba7c2f56, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6a01814d3017604da045a7348d2933b, type: 2}
   m_IsPrefabParent: 0
@@ -1292,6 +1332,11 @@ Prefab:
       propertyPath: m_Name
       value: MovableCube_4_2
       objectReference: {fileID: 0}
+    - target: {fileID: 23464166804128450, guid: c6a01814d3017604da045a7348d2933b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bad71abbcd0b62643b88a405fcfbf2e9, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6a01814d3017604da045a7348d2933b, type: 2}
   m_IsPrefabParent: 0
@@ -1343,6 +1388,11 @@ Prefab:
       propertyPath: m_Name
       value: MovableCube_4_3
       objectReference: {fileID: 0}
+    - target: {fileID: 23464166804128450, guid: c6a01814d3017604da045a7348d2933b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d305bc6107f49fe489b259f1e8ccc4f6, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6a01814d3017604da045a7348d2933b, type: 2}
   m_IsPrefabParent: 0
@@ -1406,6 +1456,11 @@ Prefab:
       propertyPath: m_Name
       value: MovableCube_2_2
       objectReference: {fileID: 0}
+    - target: {fileID: 23464166804128450, guid: c6a01814d3017604da045a7348d2933b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 06bac7a3c09b3d34687db849fd62bdfd, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6a01814d3017604da045a7348d2933b, type: 2}
   m_IsPrefabParent: 0
@@ -1540,6 +1595,11 @@ Prefab:
       propertyPath: m_Name
       value: MovableCube_2_3
       objectReference: {fileID: 0}
+    - target: {fileID: 23464166804128450, guid: c6a01814d3017604da045a7348d2933b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ba3a8e17e65fca449ad9f89e2bf423d3, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6a01814d3017604da045a7348d2933b, type: 2}
   m_IsPrefabParent: 0
@@ -1591,6 +1651,11 @@ Prefab:
       propertyPath: m_Name
       value: MovableCube_4_1
       objectReference: {fileID: 0}
+    - target: {fileID: 23464166804128450, guid: c6a01814d3017604da045a7348d2933b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 02028d98cb0ab1240a8c9cf6f7a1e890, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6a01814d3017604da045a7348d2933b, type: 2}
   m_IsPrefabParent: 0
@@ -1815,6 +1880,11 @@ Prefab:
       propertyPath: m_Name
       value: MovableCube_2_4
       objectReference: {fileID: 0}
+    - target: {fileID: 23464166804128450, guid: c6a01814d3017604da045a7348d2933b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7d6a96ef270ff9d4d9417c9cb7a3309a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6a01814d3017604da045a7348d2933b, type: 2}
   m_IsPrefabParent: 0
