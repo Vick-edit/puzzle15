@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using XD.Events;
 
 namespace XD.Movement
 {
@@ -7,13 +8,16 @@ namespace XD.Movement
     public class MoveObject : AbstractMovable
     {
         [Header("время за которое будет перемещён объект")]
-        private const float     MomentDurationInSeconds = 0.35f;
+        private const float     MomentDurationInSeconds = 0.25f;
 
         /// <summary> Находится ли сейчас объект в движении </summary>
         private bool            isInMovement = false;
 
-
         #region AbstractMovable
+
+        /// <summary> Событие срабатывает единожды, когда завершается следующее перемещение, после этого все подписчики сбрасываются </summary>
+        public override event MovementEndedEvent OnNextMovementFinished;
+
         /// <summary>
         /// Перемещение объекта до заданной позиции
         /// </summary>
@@ -26,6 +30,7 @@ namespace XD.Movement
                 StartCoroutine(PerformMovement(destenation));
             }
         }
+
         #endregion
 
         /// <summary>
@@ -76,11 +81,21 @@ namespace XD.Movement
                 //Завершаем перемещение точной установкой координат
                 transform.position = destenation;
             }
-            finally 
+            finally
             {
-                isInMovement = false;
+                PutDownMovementFlag();
             }
             yield return null;
+        }
+
+        private void PutDownMovementFlag()
+        {
+            isInMovement = false;
+            if (OnNextMovementFinished != null)
+            {
+                OnNextMovementFinished.Invoke();
+                OnNextMovementFinished = null;
+            }
         }
     }
 }

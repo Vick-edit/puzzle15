@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4493351810374126}
   - component: {fileID: 65555389297817742}
   - component: {fileID: 114928278843187150}
+  - component: {fileID: 114007719672450170}
   m_Layer: 0
   m_Name: MovableCube
   m_TagString: Untagged
@@ -38,6 +39,8 @@ GameObject:
   - component: {fileID: 4451473987980024}
   - component: {fileID: 33308745836128660}
   - component: {fileID: 23794762785427670}
+  - component: {fileID: 64996719256038470}
+  - component: {fileID: 114081206544038232}
   m_Layer: 0
   m_Name: 15puzzle
   m_TagString: Untagged
@@ -52,8 +55,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1500387546766078}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -0.074, y: 0.06, z: 0.03}
-  m_LocalScale: {x: 17.2, y: 17.2, z: 19}
+  m_LocalPosition: {x: -0.044, y: 0.35, z: -0.044}
+  m_LocalScale: {x: 15.44, y: 15.44, z: 111}
   m_Children: []
   m_Father: {fileID: 4493351810374126}
   m_RootOrder: 0
@@ -65,8 +68,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1231575266371916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5}
+  m_LocalScale: {x: 1.12, y: 0.17, z: 1.12}
   m_Children:
   - {fileID: 4451473987980024}
   m_Father: {fileID: 0}
@@ -113,6 +116,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1500387546766078}
   m_Mesh: {fileID: 4300000, guid: 0910b6ef372e60c4d9fcd3fcb19b3e1f, type: 3}
+--- !u!64 &64996719256038470
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1500387546766078}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 0910b6ef372e60c4d9fcd3fcb19b3e1f, type: 3}
 --- !u!65 &65555389297817742
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -121,10 +138,36 @@ BoxCollider:
   m_GameObject: {fileID: 1231575266371916}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.17, z: 1}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114007719672450170
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1231575266371916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff1981496b27ee24abcf5a52e3e9555b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsEpmty: 0
+  MoveController: {fileID: 114928278843187150}
+  "Click\u0421ontroller": {fileID: 114081206544038232}
+--- !u!114 &114081206544038232
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1500387546766078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae41e5157add6b448a9a130fcca394e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PuzzleTile: {fileID: 114007719672450170}
 --- !u!114 &114928278843187150
 MonoBehaviour:
   m_ObjectHideFlags: 1
