@@ -27,6 +27,12 @@ namespace XD.Movement
             if (!isInMovement)
             {
                 isInMovement = true;
+                //начинаем воспроизведение звука перемещения
+                if (MovmentSoundManager != null)
+                {
+                    MovmentSoundManager.PlaySound(MomentDurationInSeconds, MomentDurationInSeconds/3, MomentDurationInSeconds/3);
+                }
+                //начинаем само перемещение
                 StartCoroutine(PerformMovement(destenation));
             }
         }

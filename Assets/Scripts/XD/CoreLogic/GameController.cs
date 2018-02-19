@@ -9,6 +9,13 @@ namespace XD.CoreLogic
     /// <summary> Основной класс механики игры </summary>
     public class GameController : MonoBehaviour
     {
+        /// <summary> Звук победы </summary>
+        public AudioSource                      WinSound;
+        /// <summary> Фоновая музыка </summary>
+        public AudioSource                      BackgroundSound;
+        /// <summary> Дефолтное значение громкости фоновой музыки </summary>
+        private float                           backgroundSoundVolume;
+
         /// <summary> Константа - число пазлов на игровом поле, включая пустой </summary>
         private const int                       PUZZLES_COUNT = 16;
         /// <summary> Массив, всех используемых пазлов, нужен только для привязки элементов в Unity</summary>
@@ -37,11 +44,13 @@ namespace XD.CoreLogic
 
         public void Start()
         {
+            backgroundSoundVolume = BackgroundSound.volume;
+
             FillVirtualField();
             do
             {
                 ShuffleVirtualField();
-                CheckIsItWin();
+                CheckIsItWin(false);
             } while (isWin);
         }
 
@@ -220,7 +229,8 @@ namespace XD.CoreLogic
         }
 
         /// <summary> Проверить завершена ли игра </summary>
-        private void CheckIsItWin()
+        /// <param name="isItUserAction"> Вызвана ли эта проверка в связи с действями игрока </param>
+        private void CheckIsItWin(bool isItUserAction = true)
         {
             isWin = true;
             foreach (var puzzle in AllPuzzleTiles)
@@ -230,6 +240,11 @@ namespace XD.CoreLogic
                     isWin = false;
                     break;
                 }
+            }
+            if (isWin && isItUserAction)
+            {
+                BackgroundSound.volume = backgroundSoundVolume/2;
+                WinSound.Play();
             }
         }
 
