@@ -9,6 +9,8 @@ namespace XD.CoreLogic
     /// <summary> Основной класс механики игры </summary>
     public class GameController : MonoBehaviour
     {
+        /// <summary> Элемент управления GUI </summary>
+        public UIManager                        UiManager;
         /// <summary> Звук победы </summary>
         public AudioSource                      WinSound;
         /// <summary> Фоновая музыка </summary>
@@ -52,6 +54,7 @@ namespace XD.CoreLogic
                 ShuffleVirtualField();
                 CheckIsItWin(false);
             } while (isWin);
+            UiManager.StartUIControl();
         }
 
         #endregion
@@ -182,6 +185,7 @@ namespace XD.CoreLogic
                 //обновляем координаты на виртуальном поле
                 virtualFieldOfPuzzles[GetPuzzleRow(notEmptyPuzzle), GetPuzzleCol(notEmptyPuzzle)] = notEmptyPuzzle;
                 virtualFieldOfPuzzles[GetPuzzleRow(emptyPuzzle), GetPuzzleCol(emptyPuzzle)] = emptyPuzzle;
+                UiManager.StepsCount++;
                 CheckIsItWin();
             }
             finally
@@ -245,6 +249,7 @@ namespace XD.CoreLogic
             {
                 BackgroundSound.volume = backgroundSoundVolume/2;
                 WinSound.Play();
+                UiManager.SetWin();
             }
         }
 
